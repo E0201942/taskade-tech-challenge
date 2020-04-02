@@ -6,14 +6,16 @@ One of the biggest issues I faced was the 60 request per hour limit when using t
 How I worked around this issue is by showing the additional information when the query returned less than 60 users and only showing the general information when more than 60 users were returned. I also implemented additional parameters of minimum repositories and minimum followers so that a user would be more likely to be able to find his target Github user within the 100 users displayed. 
 
 Search Queries returning additional info: <br/>
+
 Search term: tom  Minimum Repositories: 42  Minimum Followers: 1000 <br/>
 Search term: lopon  Minimum Repositories: 0   Minimum Followers: 0 <br/>
 Search term: dadew  Minimum Repositories: 0   Minimum Followers: 0 <br/>
 
 Search Queries without additional info: <br/>
-#Search term: tom  Minimum Repositories: 0  Minimum Followers: 0 <br/>
-#Search term: john  Minimum Repositories: 0   Minimum Followers: 0 <br/>
-#Search term: brent  Minimum Repositories: 0   Minimum Followers: 0 <br/>
+
+Search term: tom  Minimum Repositories: 0  Minimum Followers: 0 <br/>
+Search term: john  Minimum Repositories: 0   Minimum Followers: 0 <br/>
+Search term: brent  Minimum Repositories: 0   Minimum Followers: 0 <br/>
 
 If I had more time I would have tried to find another workaround for this limit, possibly through the use of proxy servers or VPNs because I noticed that it was my IP address being used to identify that I had gone over the limit. I would also have done more extensive testing to ensure that all bugs were fixed. 
 
