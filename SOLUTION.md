@@ -19,7 +19,10 @@ Search term: brent  Minimum Repositories: 0   Minimum Followers: 0 <br/>
 
 If I had more time I would have tried to find another workaround for this limit, possibly through the use of proxy servers or VPNs because I noticed that it was my IP address being used to identify that I had gone over the limit. I would also have done more extensive testing to ensure that all bugs were fixed. 
 
-Some known bugs are that leaving the minimum repository and follower fields empty causes an error. Though a default value of 0 is included, if a user were to delete away whatever was in the entry fields and attempted a search, an error would appear. Another issue is that if more than 60 queries occur in an hour it will cause an error. Another bug is that enter key does not submit the query and the search button must be pressed manually. 
+Some known bugs that I would also have fixed include: 
+Leaving the minimum repository and follower fields empty causes an error. Though a default value of 0 is included, if a user were to delete away whatever was in the entry fields and attempted a search, an error would appear.<br/> 
+If more than 60 queries occur in an hour it will cause an error. <br/>
+The enter key does not submit the query and the search button must be pressed manually. 
 
 
 ## Available Scripts
