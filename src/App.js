@@ -160,23 +160,31 @@ const reposHandleOnChange = event => {
 	const followerHandleOnChange = event => {
 	setFollowers(event.target.value);
 	};
+	const handleKeyDown = event => {
+	if(event.key === 'Enter' ){
+		getGithubUsers.bind(this);
+	}
+	};
   return (
     <Toolbar className={classes.root}>
         <form  noValidate autoComplete="off">
-      <TextField id="standard-basic" label="Github Username" onChange={event => searchHandleOnChange(event)} 
+      <TextField id="standard-basic" label="Search" onChange={event => searchHandleOnChange(event)}
       />
       </form>
       <form  noValidate autoComplete="off">
       <TextField id="standard-basic" label="Minimum Repos" onChange={event => reposHandleOnChange(event)} 
       value = {minRepos}/>
       </form>
-      <form  noValidate autoComplete="off">
+      <form  onSubmit = {getGithubUsers.bind(this)} noValidate autoComplete="off">
       <TextField id="standard-basic" label="Minimum Followers" onChange={event => followerHandleOnChange(event)} 
+
       value = {minFollowers}/>
+      <button type="submit"></button>
       </form>
       <IconButton onClick = {getGithubUsers.bind(this)} aria-label="search">
             <SearchIcon />
           </IconButton>
+
     </Toolbar>
   );
 };
